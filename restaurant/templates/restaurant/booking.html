@@ -1,0 +1,7 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Book a Table</title></head>
+<body>
+<h2>Book a Table</h2>
+<form method="post">{% csrf_token %}{{ form.as_p }}<button type="submit">Book</button></form>
+<p><a href="{% url 'restaurant:index' %}">Home</a></p>
+</body></html>
